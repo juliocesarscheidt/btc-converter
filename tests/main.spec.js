@@ -23,4 +23,24 @@ describe('Main CLI', () => {
       done();
     });
   });
+
+  it('Should return currency option in command --help', (done) => {
+    exec(`${btcConverter} --help`, (err, stdout, stderr) => {
+      if (err) {
+        throw err;
+      }
+      expect(stdout.includes('--currency')).to.be.true;
+      done();
+    });
+  });
+
+  it('Should return amount option in command --help', (done) => {
+    exec(`${btcConverter} --help`, (err, stdout, stderr) => {
+      if (err) {
+        throw err;
+      }
+      expect(stdout.includes('--amount')).to.be.true;
+      done();
+    });
+  });
 });

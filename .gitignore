@@ -2,3 +2,5 @@ node_modules
 *.log
 *.txt
 package-lock.json
+*.tgz
+.nyc_output/
