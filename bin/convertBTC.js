@@ -22,10 +22,11 @@ function convertBTC() {
     try {
       apiResponse = JSON.parse(body);
     } catch (parseError) {
-      console.log(chalk.red('Something went wrong in the API. Try again later.'));
+      console.log(chalk.red('Something went wrong in the API. Try again later.')); // eslint-disable-line
       return parseError;
     }
-    console.log(chalk.red(amount) + ' BTC to ' + chalk.blue(currency) + ' = ' + apiResponse.price);
+    console.log(chalk.red(amount) + ' BTC to ' + chalk.blue(currency) + ' = ' + apiResponse.price); // eslint-disable-line
+    return apiResponse;
   });
 }
 
