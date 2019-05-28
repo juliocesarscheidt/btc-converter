@@ -1,6 +1,6 @@
 {
   "name": "btc-converter-v2",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A bitcoin converter",
   "main": "bin/main.js",
   "scripts": {
@@ -40,7 +40,8 @@
   "keywords": [
     "js",
     "cli",
-    "library"
+    "library",
+    "bitcoin"
   ],
   "author": "Julio Cesar <julio@blackdevs.com.br>",
   "license": "GPLv3",
