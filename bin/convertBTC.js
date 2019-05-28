@@ -1,6 +1,6 @@
 'use strict';
 
-var request = require('request');
+var request = require('request-promise-native');
 var chalk = require('chalk');
 var ora = require('ora');
 
@@ -16,17 +16,16 @@ function convertBTC() {
   var url = 'https://apiv2.bitcoinaverage.com/convert/global?from=BTC&to=' + currency + '&amount=' + amount;
 
   spinner.start();
-  request(url, function (error, response, body) {
-    var apiResponse = void 0;
+  return request(url).then(function (body) {
     spinner.stop();
-    try {
-      apiResponse = JSON.parse(body);
-    } catch (parseError) {
-      console.log(chalk.red('Something went wrong in the API. Try again later.')); // eslint-disable-line
-      return parseError;
-    }
-    console.log(chalk.red(amount) + ' BTC to ' + chalk.blue(currency) + ' = ' + apiResponse.price); // eslint-disable-line
-    return apiResponse;
+    return body;
+  }).then(function (body) {
+    var apiResponse = JSON.parse(body);
+    console.info(chalk.red(amount) + ' BTC to ' + chalk.blue(currency) + ' = ' + apiResponse.price); // eslint-disable-line
+  }).catch(function (err) {
+    spinner.stop();
+    console.info(chalk.red('Something went wrong in the API. Try again later.')); // eslint-disable-line
+    return err;
   });
 }
 
