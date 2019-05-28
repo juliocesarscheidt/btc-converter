@@ -15,7 +15,7 @@
 npm i -g btc-converter-v2
 ```
 
-* Or cloned and then builded
+* Or cloned and then built
 
 ```bash
 git clone https://github.com/julio-cesar-development/btc-converter.git
