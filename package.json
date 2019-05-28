@@ -71,6 +71,7 @@
     "chalk": "^2.4.2",
     "commander": "^2.10.0",
     "ora": "^1.4.0",
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7"
   }
 }
