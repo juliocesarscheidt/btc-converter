@@ -1,6 +1,7 @@
 # Bitcoin Converter
 
 ![Language](https://badgen.net/badge/language/javascript/green)
+[![Coverage Status](https://coveralls.io/repos/github/julio-cesar-development/btc-converter/badge.svg?branch=master)](https://coveralls.io/github/julio-cesar-development/btc-converter?branch=master)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 > This is a CLI tool to convert from Bitcoin to any currency

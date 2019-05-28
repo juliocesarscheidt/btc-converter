@@ -1,6 +1,6 @@
 {
   "name": "btc-converter-v2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A bitcoin converter",
   "main": "bin/main.js",
   "scripts": {
@@ -43,7 +43,7 @@
     "library"
   ],
   "author": "Julio Cesar <julio@blackdevs.com.br>",
-  "license": "MIT",
+  "license": "GPLv3",
   "homepage": "https://github.com/julio-cesar-development/btc-converter#readme",
   "devDependencies": {
     "babel-cli": "^6.24.1",
