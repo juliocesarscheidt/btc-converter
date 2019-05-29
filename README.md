@@ -1,7 +1,8 @@
 # Bitcoin Converter
 
 [![Build Status](https://badgen.net/travis/julio-cesar-development/btc-converter?icon=travis)](https://travis-ci.org/julio-cesar-development/btc-converter)
-![Version](https://badgen.net/npm/v/btc-converter-v2)
+![npm](https://img.shields.io/npm/dt/btc-converter-v2.svg?style=popout)
+![Version](https://img.shields.io/npm/v/btc-converter-v2.svg)
 [![Coverage Status](https://coveralls.io/repos/github/julio-cesar-development/btc-converter/badge.svg?branch=master)](https://coveralls.io/github/julio-cesar-development/btc-converter?branch=master)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
@@ -20,9 +21,9 @@ npm i -g btc-converter-v2
 ```bash
 git clone https://github.com/julio-cesar-development/btc-converter.git
 cd btc-converter
-npm i
+npm install
 npm run build
-npm run link
+npm link
 ```
 
 ## Use
